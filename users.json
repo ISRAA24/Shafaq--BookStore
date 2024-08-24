@@ -1,0 +1,22 @@
+[
+    {
+        "email": "hassan@yahoo.com",
+        "name": "hassaneldash",
+        "password": "123456"
+    },
+    {
+        "email": "taha@yahoo.com",
+        "name": "tahashabaan",
+        "password": "1234567"
+    },
+    {
+        "email": "rana@yahoo.com",
+        "name": "ranahamed",
+        "password": "12345678"
+    },
+    {
+        "email": "esraahmed@gmail.com",
+        "name": "esraaeldin",
+        "password": "123456789"
+    }
+]

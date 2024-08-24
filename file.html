@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>shafaq' BookStore</title>
+    <link rel="icon" href="images/open-book (1).png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">shafaQ' Books<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <!-- servies -->
+            <a href="#products">Store</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+        <button class="btnLogin-popup">Login</button>
+        <label id="dark-change"></label>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Amazing Books</h3>
+            <span>original & interesting books</span>
+            <p>Read books and get knowledge</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <br />
+                <form onsubmit="handleLogin(event)">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                        </span>
+                        <input type="email" required />
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required />
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox" />Remember Me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>
+                            Don't have an account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <br />
+                <form onsubmit="handleRegister(event)">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required />
+                        <label>name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                        </span>
+                        <input type="email" required />
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required />
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" />Agree to the terms & conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>
+                            Already have an account?
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span> about </span> us</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="images/4243590-hd_1920_1080_30fps.mp4" autoplay muted loop></video>
+                <h3>best book sellers</h3>
+            </div>
+            <div class="content">
+                <h3>Why choose us?</h3>
+                <p>
+                    We are very passionate about books, and we will definitely guide the
+                    store visitors to the best books matching their taste and interests.
+                    In shafaq' Bookstore, You can only find original books with wide
+                    variety and different genres.
+                </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading">latest <span> books</span></h1>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box" />
+                <input type="email" placeholder="email" class="box" />
+                <input type="text" placeholder="number" class="box" />
+                <textarea name="" placeholder="message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn" />
+            </form>
+            <div class="image">
+                <img src="images/world-book-day-boygirl-reading-illstration_1046390-50341.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Store</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">egypt</a>
+                <a href="#">USA</a>
+                <a href="#">france</a>
+                <a href="#">japan</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+201176528921</a>
+                <a href="#">EsraaAhmed@gmail.com</a>
+                <a href="#">Bani Sweif,Egypt</a>
+                <img src="images/360_F_473846184_0k637f6855ZJqaulKqAmgJTEVGVibR1P.jpg" alt="" />
+            </div>
+        </div>
+        <div class="credit">
+            created by <span>Esraa Ahmed</span> | all rights reserved
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
